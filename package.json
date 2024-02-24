@@ -4,11 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server":"json-server --watch db.json --port 5000",
+    "server": "json-server --watch db.json --port 5000 --middlewares ./range.js",
     "client": "npm run dev --prefix client ",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
 }
