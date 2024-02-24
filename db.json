@@ -1,0 +1,17 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "post one",
+      "body": "this is post",
+      "publishedAt": "10-20-24"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "joe",
+      "email": "joe@email.com"
+    }
+  ]
+}
