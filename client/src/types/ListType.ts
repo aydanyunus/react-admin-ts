@@ -4,3 +4,10 @@ export type ListProps = {
   body: string;
   publishedAt: string;
 };
+
+
+export type UserProps = {
+  id?: string;
+  name: string;
+  email: string;
+}

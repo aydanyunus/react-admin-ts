@@ -1,5 +1,5 @@
 import { DateInput, Edit, SimpleForm, TextInput } from "react-admin";
-import { ListProps } from "../types/ListType";
+import { ListProps } from "../../types/ListType";
 
 const PostEdit = (props: ListProps) => {
   return (

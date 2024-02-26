@@ -6,7 +6,7 @@ import {
   List,
   TextField,
 } from "react-admin";
-import { ListProps } from "../types/ListType";
+import { ListProps } from "../../types/ListType";
 
 
 const PostList = (props: ListProps) => {
