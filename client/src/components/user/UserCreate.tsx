@@ -1,7 +1,6 @@
-import { Create, SimpleForm, TextInput } from "react-admin"
-import { UserProps } from "../../types/ListType"
+import { Create, SimpleForm, TextInput, CreateProps } from "react-admin"
 
-const UserCreate = (props: UserProps) => {
+const UserCreate = (props: CreateProps) => {
   return (
     <Create title="Create New User" {...props}>
     <SimpleForm>

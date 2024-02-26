@@ -1,7 +1,6 @@
-import { Datagrid, DeleteButton, EditButton, List, TextField } from 'react-admin'
-import { UserProps } from '../../types/ListType'
+import { Datagrid, DeleteButton, EditButton, List, TextField, ListProps } from 'react-admin'
 
-const UserList = (props: UserProps) => {
+const UserList = (props: ListProps) => {
   return (
     <List {...props}>
       <Datagrid>

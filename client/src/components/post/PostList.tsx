@@ -5,8 +5,8 @@ import {
   EditButton,
   List,
   TextField,
+  ListProps
 } from "react-admin";
-import { ListProps } from "../../types/ListType";
 
 
 const PostList = (props: ListProps) => {

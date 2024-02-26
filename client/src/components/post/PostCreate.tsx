@@ -1,7 +1,6 @@
-import { Create, DateInput, SimpleForm, TextInput } from "react-admin";
-import { ListProps } from "../../types/ListType";
+import { Create, DateInput, SimpleForm, TextInput, CreateProps } from "react-admin";
 
-const PostCreate = (props: ListProps) => {
+const PostCreate = (props: CreateProps) => {
   return (
     <Create title="Create Post" {...props}>
       <SimpleForm>
