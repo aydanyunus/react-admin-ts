@@ -1,16 +1,17 @@
-import { Create, DateInput, SimpleForm, TextInput } from "react-admin";
+import { DateInput, Edit, SimpleForm, TextInput } from "react-admin";
 import { ListProps } from "../types/ListType";
 
-const PostCreate = (props: ListProps) => {
+const PostEdit = (props: ListProps) => {
   return (
-    <Create title="Create Post" {...props}>
+    <Edit title="Edit Post" {...props}>
       <SimpleForm>
+        <TextInput disabled source="id" />
         <TextInput source="listTitle" />
         <TextInput source="body" multiline />
         <DateInput label="Published" source="publishedAt" />
       </SimpleForm>
-    </Create>
+    </Edit>
   );
 };
 
-export default PostCreate;
+export default PostEdit;

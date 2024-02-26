@@ -6,20 +6,15 @@ import {
   List,
   TextField,
 } from "react-admin";
+import { ListProps } from "../types/ListType";
 
-type ListProps = {
-  id: string;
-  title: string;
-  body: string;
-  publishedAt: string;
-};
 
 const PostList = (props: ListProps) => {
   return (
     <List {...props}>
       <Datagrid>
         <TextField source="id" />
-        <TextField source="title" />
+        <TextField source="listTitle" />
         <DateField source="publishedAt" />
         <EditButton resource="posts" />
         <DeleteButton resource="posts" />
