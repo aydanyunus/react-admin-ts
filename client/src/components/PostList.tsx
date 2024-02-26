@@ -7,13 +7,20 @@ import {
   TextField,
 } from "react-admin";
 
-const PostList = (props: any) => {
+type ListProps = {
+  id: string;
+  title: string;
+  body: string;
+  publishedAt: string;
+};
+
+const PostList = (props: ListProps) => {
   return (
     <List {...props}>
       <Datagrid>
         <TextField source="id" />
         <TextField source="title" />
-        <DateField source="published_at" />
+        <DateField source="publishedAt" />
         <EditButton resource="posts" />
         <DeleteButton resource="posts" />
       </Datagrid>
