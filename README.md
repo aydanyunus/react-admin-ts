@@ -21,7 +21,7 @@ Before you begin, ensure you have met the following requirements:
 Clone the repository:
 
    ```bash
-   git clone https://github.com/aydanyunus/react-admin-ts
+   git clone https://github.com/aydanyunus/react-admin-ts.git
    cd react-admin-ts
    ```
 
